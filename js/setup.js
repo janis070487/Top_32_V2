@@ -10,3 +10,17 @@ if(ww >= 960)
 
   typeDevice = "smart";
   }
+
+
+
+
+  function SetSize()
+  {
+    if(typeDevice == "smart")
+    {
+      return (hh / 2);
+    }else
+    {
+      return (hh - 120);
+    }
+  }

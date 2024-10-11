@@ -1,3 +1,7 @@
+
+
+/*
+
 function GeneratorPath(nameImg, folder, format)
   {
     var file = new Array(nameImg.length);
@@ -7,3 +11,5 @@ function GeneratorPath(nameImg, folder, format)
       }
       return file;
   }
+
+  */
