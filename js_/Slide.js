@@ -1,3 +1,7 @@
+
+
+/*
+
 class Slide
 {
   Id = "";
@@ -194,3 +198,5 @@ class Slide
   }
   return skaitlis;
   }
+
+  */

@@ -1,3 +1,18 @@
+
+class _container{
+  constructor(name_ID, parentName_ID){
+    this.ID = name_ID;
+    this.parent_ID = parentName_ID;
+    this.class = new Array(0);
+    this.row = new Array(0);
+  }
+}
+
+
+
+
+
+/*
 class Col
 {
 //__________________________________________________
@@ -84,5 +99,4 @@ class Col
 
   }
 }
-//__________________________________________________
-//__________________________________________________
+*/

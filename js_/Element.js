@@ -1,21 +1,42 @@
-class Row
+
+class _Element{
+  constructor(name_ID, parentName_ID){
+    this.ID;
+    this.parentName;
+    this.element;
+    this.type;
+    this.class;
+    this.id;
+    this.ref;
+    this.txt;
+    this.value;
+  }
+}
+
+
+
+
+/*
+
+class Element
 {
-  //__________________________________________________v
-  constructor(name, parentName)
+//__________________________________________________
+  constructor(name, parentName, type)
   {
-    this.name = name;
+  this.name = name;
+  this.type = type;
     this.parentName = parentName;
-    this._classResult = "";
     this._class = new Array(0);
-    this._class.push("row ");
+    this._classResult = "";
     this._atribute = new Array(0);
     this._atributeValue = new Array(0);
+    this._style = new Array(0);
     this._style = new Array(0);
   }
   //__________________________________________________
   Show()
   {
-    var element = document.createElement('div');
+    var element = document.createElement(this.type);
     element.setAttribute("id", this.name);
 
     for(let i = 0; i < this._class.length; i++)
@@ -31,17 +52,21 @@ class Row
       }
         document.getElementById(this.parentName).appendChild(element);
   }
-//__________________________________________________
   None()
   {
 
   }
+  //__________________________________________________
   Reset()
   {
     this._classResult = "";
   }
+  //__________________________________________________
   DeleteToDisplay()
   {
 
   }
-}
+  //__________________________________________________
+};
+
+*/

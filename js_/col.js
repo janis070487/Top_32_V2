@@ -1,3 +1,14 @@
+
+class _col{
+  constructor(name_ID, parentName_ID){
+    this.Id = name_ID;
+    this.parent_ID = parentName_ID;
+    this.class = new Array(0);
+    this.element = new Array(0);
+  }
+}
+
+/*
 class Col
 {
 //__________________________________________________
@@ -86,3 +97,4 @@ class Col
 }
 //__________________________________________________
 //__________________________________________________
+*/

@@ -1,3 +1,19 @@
+
+class row{
+  constructor(name_ID, parentName_ID){
+    this.Id = name_ID;
+    this.parent_ID = parentName_ID;
+    this.class = new Array(0);
+    this.col = new Array(0);
+  }
+}
+
+
+
+
+
+/*
+
 class Row
 {
   //__________________________________________________v
@@ -45,3 +61,5 @@ class Row
 
   }
 }
+
+*/

@@ -1,39 +1,9 @@
-
-class RenderBootstrap{
-
-
-constructor(){
-this.container = new Array(0);
-}
-
-AddContainer(container){
-  let result = false;
-  for(let i = 0; i < container.length; i++){
-    if(container[i].ID === container.ID){
-      console.log(result);
-       result = true;
-       //break;
-    }
-  }
-  if(result){
-    console.log("Tads conteiners jau eksistē");
-  }else{
-    
-    this.container.push(container);
-    console.log(this.container);
-  }
-
-}
-
-}
-
-
-/*
 class RenderBootstrap
 {
 //__________________________________________________
   constructor()
   {
+   
     this.gridSistem = new Array(3);
     this.container = new Array(0);
     this.row = new Array(0);
@@ -247,5 +217,3 @@ var result = this.ToFind(howName, this.gridSistem);
   }
   //__________________________________________________
 }
-
-*/
