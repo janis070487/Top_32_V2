@@ -23,8 +23,13 @@ for (let x in _Element) {
 
 //  <button type="button" class="btn btn-outline-secondary">Secondary</button>
 
-//let bt1 = B_Outline_buttons("Test", "Secondary", "Janis");
-let bt1 = new B_Outline_buttons("btn1", "Secondary", "Home");
+let bt1 = new B_Outline_buttons("Test", "Secondary", "Janis");
+let bt2 = new B_Outline_buttons("btn1", "Secondary", "Home");
 //bt1.show("start");
+
+let nav1 = new B_Offcanvas_Dark_Navbar("nav1");
+nav1.addMenu(bt1);
+nav1.addMenu(bt2);
+nav1.show("start");
  
 //document.getElementById("start").appendChild(para);
