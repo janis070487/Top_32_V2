@@ -1,16 +1,16 @@
 console.log(typeDevice);
 
-// let bt1 = new B_Outline_buttons("Test", "Success", "Janis");
-// let bt2 = new B_Outline_buttons("btn1", "Success", "Home");
+let bt1 = new B_Outline_buttons("Test", "Success", "Janis");
+let bt2 = new B_Outline_buttons("btn1", "Success", "Home");
 
 
-// let nav1 = new B_Offcanvas_Dark_Navbar("nav1");
-// nav1.addMenu(bt1);
-// nav1.addMenu(bt2);
-// nav1.show("start");
+let nav1 = new B_Offcanvas_Dark_Navbar("nav1");
+nav1.addMenu(bt1);
+nav1.addMenu(bt2);
+nav1.show("izvele");
  
-// nav1.setBrand("Janis");
-// nav1.setTitle("Kata");
+nav1.setBrand("Janis");
+nav1.setTitle("Kata");
 
 //760
 
@@ -27,36 +27,41 @@ console.log(typeDevice);
 
 
 // let img1 = new Image();
-// img1.src = "/foto/011002.png";
+// img1.src = "/foto/013001.png";
 // let img2 = new Image();
-// img2.src = "foto/010902.png";
+// img2.src = "/foto/013002.png";
 // let img3 = new Image();
-// img3.src = "foto/011304.png";
+// img3.src = "/foto/013003.png";
 
-// let sizeimg = imgSize("/foto/011002.png");
+//  let sizeimg = imgSize("/foto/013001.png");
 
-//let w_ = (window.innerWidth / sizeimg[0]) * sizeimg[0];
+//  //let w_ = (window.innerWidth / sizeimg[0]) * sizeimg[0];
 
-//console.log(w_);
-// let h_ = (hh / sizeimg[0]) * sizeimg[0];
-// let w_ = (hh / sizeimg[0]) * sizeimg[1];
-// console.log(sizeimg);
+// // console.log(w_);
+//  let h_ = (hh / sizeimg[0]) * sizeimg[0];
+//  let w_ = (hh / sizeimg[0]) * sizeimg[1];
+// // console.log(sizeimg);
 
 
-// let img1 = new Image(w_, h_);
-// img1.setAttribute("id", "test");
-// img1.src = "/foto/011002.png";
+//  let img1 = new Image(w_, h_);
+// // img1.setAttribute("id", "test");
+// img1.src = "/foto/013001.png";
 // img1.classList.add("d-block");
-// //let a = (hh / sizeimg[0]);
-// img1.classList.add("w-" + (hh / sizeimg[0]).toString());
+// // //let a = (hh / sizeimg[0]);
+//  img1.classList.add("w-" + (hh / sizeimg[0]).toString());
 
-// this.o_classList = this.o.classList;
-//this.o_classList.add("btn-close");
-//class="d-block w-100"
+// // this.o_classList = this.o.classList;
+// // this.o_classList.add("btn-close");
+// // class="d-block w-100"
 
-// document.getElementById("img1").appendChild(img1);
+//  document.getElementById("t1").appendChild(img1);
 
+//  document.getElementById("t2").appendChild(img1);
 
-//console.log(imgSize("/foto/011002.png"));
-//imgSize("foto/010902.png");
-//imgSize("foto/011304.png");
+ 
+// // document.getElementById("t3").appendChild(img1);
+
+// //console.log(imgSize("/foto/011002.png"));
+// console.log(imgSize("foto/012502.png"));
+// console.log(imgSize("foto/011901.png"));
+// console.log(imgSize("foto/010902.png"));

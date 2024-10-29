@@ -5,11 +5,9 @@ let hh = window.innerHeight;
 console.log("W: " + ww);
 console.log("H: " + hh);
 var typeDevice;
-if(ww >= 960)
-{
+if (ww >= 960) {
   typeDevice = "desktop";
-}else
- {
+} else {
 
   typeDevice = "smart";
-  }
+}
