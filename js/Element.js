@@ -56,9 +56,12 @@ class B_Outline_buttons {
           break;
      }
    
+   
   }
 
-  
+  addOnClick(value){
+      document.getElementById(this.ID).setAttribute("onclick", value); 
+  }
   /**
    * 
    * @param {string} parentName elementa identifikators kur elements tiks ievietots
@@ -210,6 +213,248 @@ setTitle(txt){
 
 }
   //________________________________________________________________________
-  
+/*
+<div class="container">
 
+<div class="row">
+
+  <div class="col-12 col-lg-6">
+    <center>
+
+
+
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <img src="/foto/013001.png" class="d-block" style="height: 627px;" alt="...">
+
+          </div>
+          <div class="carousel-item">
+            <img src="/foto/013002.png" class="d-block" style="height: 627px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/foto/013003.png" class="d-block" style="height: 627px;" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+
+    </center>
+  </div>
+
+
+  <div class="col-12 col-lg-6">
+    <center>
+      <div id="2carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#2carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#2carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#2carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/foto/011501.png" class="d-block" style="height: 627px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/foto/011502.png" class="d-block" height="627" style="height: 627px;" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/foto/011503.png" class="d-block" height="627" style="height: 627px;" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#2carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#2carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </center>
+  </div>
+  
+</div>
+
+
+</div>
+
+*/
 //_________________________________________________________________________________________
+
+/*
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+---------------------------------------- id -------------------------------------------------------------------------------
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  --------------------------------------- id ------------------------------------------------------------------------------
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  --------------------------------------------------------------------------------------------------------------------
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  -----------------------------------------------------------------------------------------------------------------------
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  -----------------------------------------------------------------------------------------------------------------------
+</div>
+
+*/
+
+
+
+class Slide{
+  constructor(ID){
+    this.ID = ID;
+    this.slideItems = 0;
+    this.isFirstItems = true;
+    this.IndicataorID = this.ID + "indikator";
+    this.CaruselInerID = this.ID + "Iner";
+    this.btnPrevID = this.ID + "btnPrew";
+    this.btnNextID = this.ID + "btnNext";
+    this.Indicator = new Array(0);
+    this.Items = new Array(0);
+    this.ItemsElements = new Array(0);
+
+    //____________________ Galvenais ____________________________________
+    this.carusel = document.createElement("div");
+    this.carusel.setAttribute("id", this.ID);
+    this.carusel.classList.add("carousel slide");
+    this.carusel.setAttribute("data-bs-ride", "true");
+
+    //_____________________ Saraksts ar indikatoriem _______________________________________________
+    this.indikatosr = document.createElement("div");
+    this.indikatosr.setAttribute("id", this.IndicataorID);
+    this.indikatosr.classList.add("carousel-indicators");
+
+    //______________________ elementi _________________________________________________
+    this.iner = document.createElement("div");
+    this.iner.setAttribute("id", this.CaruselInerID);
+    this.iner.classList.add("carousel-inner");
+
+    //_____________________ poga atpakal _____________________________________________
+    this.btnPrev = document.createElement("btn");
+    this.btnPrev.classList.add("carousel-control-prev");
+    this.btnPrev.setAttribute("type", "button");
+    this.btnPrev.setAttribute("data-bs-target", "#" + this.ID);
+    this.btnPrev.setAttribute("data-bs-slide", "prev");
+    
+    this.sp1Prev = document.createElement("span");
+    this.sp1Prev.classList.add("carousel-control-prev-icon");
+    this.sp1Prev.setAttribute("aria-hidden", "true");
+
+    this.sp2Prev = document.createElement("span");
+    this.sp2Prev.classList.add("visually-hidden");
+    this.sp2Prev.innerHTML = "Previous";
+
+    //_____________________ poga uz prieksu _____________________________________________
+    this.btnPrev = document.createElement("btn");
+    this.btnPrev.classList.add("carousel-control-next");
+    this.btnPrev.setAttribute("type", "button");
+    this.btnPrev.setAttribute("data-bs-target", "#" + this.ID);
+    this.btnPrev.setAttribute("data-bs-slide", "next");
+    
+    this.sp1Prev = document.createElement("span");
+    this.sp1Prev.classList.add("carousel-control-next-icon");
+    this.sp1Prev.setAttribute("aria-hidden", "true");
+
+    this.sp2Prev = document.createElement("span");
+    this.sp2Prev.classList.add("visually-hidden");
+    this.sp2Prev.innerHTML = "Next";
+  }
+
+  addItems(element){
+
+    if(this.isFirstItems){
+      this.isFirstItems = false;
+      let it = document.createElement("button");
+      it.setAttribute("id", this.CaruselInerID);
+      it.setAttribute("type", "button");
+      it.setAttribute("data-bs-target", "#" + this.ID);
+      it.setAttribute("data-bs-slide-to", this.slideItems.toString());
+      this.slideItems++;
+      it.classList.add("active");
+      it.setAttribute("aria-current", "true");
+      it.setAttribute("aria-label", "Slide " + (this.slideItems.toString() + 1));
+      this.Indicator.push(it);
+
+      let itElement = document.createElement("div");
+      itElement.classList.add("carousel-item");
+      inElement.classList.add("active");
+      this.ItemsElements.push(element);
+    }else{
+      this.isFirstItems = false;
+      let it = document.createElement("button");
+      it.setAttribute("id", this.CaruselInerID);
+      it.setAttribute("type", "button");
+      it.setAttribute("data-bs-target", "#" + this.ID);
+      it.setAttribute("data-bs-slide-to", this.slideItems.toString());
+      this.slideItems++;
+      it.setAttribute("aria-label", "Slide " + (this.slideItems.toString() + 1));
+      this.Indicator.push(it);
+
+      let itElement = document.createElement("div");
+      itElement.classList.add("carousel-item");
+      this.ItemsElements.push(element);
+    }
+
+  }
+
+  show(){
+    if(this.this.Items.length > 0){
+      for(let i = 0; i < this.this.Items.length; i++){
+        document.getElementById(this.this.IndicataorID).appendChild(this.Indicator[i]);
+        document.getElementById(this.CaruselInerID).appendChild(this.Items[i]);
+        document.getElementById(this.Items[i].ID).appendChild(this.ItemsElements[i]); 
+
+      }
+    }
+  }
+}
